@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('footer.css');
+
+:root {
+    --color-primary-1: ##fff0f0;
+    --color-primary-2: ##fff0f2;
+    --color-primary-3: #f16df3;
+    --color-primary-4: #e78ce8d8;
+    --color-primary-5: #e68ce8;
+    --color-primary-6: #e68ce9;
+    --color-neutral-0: #fff;
+    --color-neutral-1: #6c361a;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  transition: all 0.6s;
+}
+
+#home{
+    padding: 28px 8%;
+}
+
+.banner {
+    padding-block: 1rem;
+    overflow: hidden;
+    background-color: var(--color-primary-4);
+  }
+  
+  .banner__container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .banner__container img {
+    height: 107px;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 4rem));
+    }
+  }
+  
+.btn-default {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff0f0;
+    border-radius: 36px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px #fff0f2;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    color: var(--color-neutral-1);
+}
+
+.btn-default:hover {
+    background-color: var(--color-primary-3);
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--color-neutral-0);
+    font-size: 1.25rem;
+    border-radius: 100%;
+    text-decoration: none;
+    color: var(--color-neutral-1);;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px var(--color-neutral-0);
+    background-color: var(--color-primary-3);
+}
+
+@media screen and (max-width: 1170px) {
+  #home{
+    overflow: auto;
+  }
+}

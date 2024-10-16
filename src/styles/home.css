@@ -1,0 +1,95 @@
+#home {
+    min-height: calc(100vh - 91px);
+    position: relative;
+    
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 5%;
+}
+
+#fundo{
+    background: #fff0f0 url("/src/assets/fundo.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-1);
+}
+
+#cta .title span {
+    color: var(--color-primary-6);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+    color: var(--color-neutral-1);
+}
+
+.button_donuts {
+    border: none;
+    background: transparent;
+    transition: all 0.4s;
+  }
+  
+  main div:hover .button_donuts:hover {
+    transform: translateY(-20px);
+  }
+  
+  main div:hover .button_donuts:not(:hover) {
+    opacity: 0.6;
+    filter: grayscale(0.3);
+  }
+  
+  .button_donuts img {
+    width: 120px;
+    height: auto;
+  }
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    #cta .title {
+        font-size: 3rem;
+        color: var(--color-neutral-1);
+    }
+
+    #cta .title {
+        font-size: 3rem;
+        color: var(--color-neutral-1);
+    }
+
+    #cta .title span {
+        color: var(--color-primary-4);
+    }
+    
+    #fundo{
+        background: #fff0f0 url("/src/assets/fundo2.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #fundo{
+        background: #fff0f0 url("/src/assets/fundo2.png");
+        background-repeat: no-repeat;
+    }
+}
+
