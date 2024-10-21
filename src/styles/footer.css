@@ -1,19 +1,17 @@
 #footer_items {
     display: flex;
     justify-content: space-between;
-    padding: 13px 0px 4% 0px;
+    padding: 0px 0px 0px 83%;
     align-items: center;
 }
 
 #copyright {
     color: var(--color-neutral-1);;
-    font-weight: 600;
 }
 
 @media screen and (max-width: 600px) {
     #footer_items {
-        flex-direction: column;
-        gap: 20px;
+        padding: 0px 0px 0px 20%;
     }
 
 }
