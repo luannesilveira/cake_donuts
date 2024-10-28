@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--icones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="src/styles/styles.css">
 
-     <!--transição-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--transição-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    
+
     <title>Luh - Mini Cake Donuts</title>
 
     <!-- Carregar icone que fica localizado na barra de link -->
@@ -22,9 +27,9 @@
 
 
 <body id="fundo">
-    <header >
+    <header>
 
-        <div ></div>
+        <div></div>
         <nav id="navbar">
             <img src="src/assets/logo.png" alt="Logo da aplicação">
 
@@ -36,7 +41,7 @@
                     <a href="#menu">Cardápio</a>
                 </li>
             </ul>
-            
+
             <div class="social-media-buttons">
                 <a href="https://wa.me/5521967235610">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -48,11 +53,13 @@
 
                 <a href="https://www.tiktok.com/@luh_minicakedonuts">
                     <i class="fa-brands fa-tiktok"></i>
-                </a>              
+                </a>
             </div>
 
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
+            <button type="button" id="menu" onclick="changeMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </nav>
 
@@ -64,52 +71,125 @@
                 <li class="nav-item">
                     <a href="#menu">Cardápio</a>
                 </li>
+                <button class="btn-default">
+                    <span><i class="fa fa-thumbs-up"></i></span>
+                    <a href="formulario.html">Peça aqui</a>
+                </button>
             </ul>
         </div>
     </header>
 
-    <main id="content">
-        <section id="home">
-            <div id="cta">
-                <h1 class="title">
-                    Saboreie o seu caminho 
-                    para o sabor da <span>felicidade</span>!
-                </h1>
+    <section id="home">
+        <div id="cta">
+            <h4>Bem Vindos(as)!</h4>
+            <h1 class="title">Cada mordida uma <span>explosão</span> de sabor!</h1>
+            <h2>Descubra o sabor irresistível dos nossos Cake Donuts <span>:)</span></h2>
+            <p class="description">
+                Macios por dentro, crocantes por fora e sempre fresquinhos! Feitos com ingredientes
+                de alta qualidade e um toque especial de carinho.
+            </p>
 
-                <p class="description">
-                    Dedicamo-nos a trazer-lhe cake donuts deliciosamente frescos, 
-                    feitos com amor, carinho e os melhores ingredientes.
-                </p>
+            <button class="btn-default">
+                <a href="formulario.html">Peça aqui!
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </button>
 
-                <button class="btn-default">
-                    <span><i class="fa fa-thumbs-up"></i></span>
-                    Peça aqui
+            <div id="peq_donuts">
+                <button class="button_donuts" type="button">
+                    <img src="src/assets/arquivo_donuts/chocolate.png">
                 </button>
 
-                <div id="peq_donuts">
-                    <button class="button_donuts" type="button" >
-                      <img src="src/assets/arquivo_donuts/chocolate.png">
-                    </button>
-              
-                    <button class="button_donuts" type="button">
-                      <img src="src/assets/arquivo_donuts/confete.png">
-                    </button>
-              
-                    <button class="button_donuts" type="button">
-                      <img src="src/assets/arquivo_donuts/granulado.png">
-                    </button>
-                </div>
+                <button class="button_donuts" type="button">
+                    <img src="src/assets/arquivo_donuts/confete.png">
+                </button>
+
+                <button class="button_donuts" type="button">
+                    <img src="src/assets/arquivo_donuts/granulado.png">
+                </button>
             </div>
+        </div>
+    </section>
 
-        <div id="footer_items">             
-            <span id="copyright">
-                Copyright © 2024 Luanne Sousa.
-            </span>
-        </div>         
-    
-</section>
 
-</main>
+    <section class="section__container about__container" id="about">
+        <p class="section__subheader">Saiba mais</p>
+        <h2 class="section__header">Conheça nossos cake donuts</h2>
+        <div class="about__row">
+            <div class="about__image">
+                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+            </div>
+            <div class="about__content">
+                <span><i class="fa-solid fa-gift"></i></span>
+                <h4>Presenteie alguém especial!</h4>
+                <p>
+                    Our expert veterinarians are here to provide comprehensive care and
+                    guidance to ensure your pet stays in perfect health.
+                </p>
+            </div>
+        </div>
+        <div class="about__row">
+            <div class="about__image">
+                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+            </div>
+            <div class="about__content">
+                <span><img src="src/assets/arquivo_donuts/mini-donut.png" alt="about-icon" /></span>
+                <h4>Mate sua vontade de comer um docinho!</h4>
+                <p>
+                    Your pet will be in good hands with our compassionate and
+                    well-trained staff, who treat every pet like family.
+                </p>
+            </div>
+        </div>
+        <div class="about__row">
+            <div class="about__image">
+                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+            </div>
+            <div class="about__content">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <h4>Dê um mimo para o seu love!</h4>
+                <p>
+                    From bathing to styling, we offer professional grooming services to
+                    keep your pet looking and feeling their best.
+                </p>
+            </div>
+        </div>
+        <div class="about__row">
+            <div class="about__image">
+                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+            </div>
+            <div class="about__content">
+                <span><i class="fa-solid fa-cake-candles"></i></span>
+                <h4>Deixe seu evento ainda mais saboroso e decorado!</h4>
+                <p>
+                    Your pet will be in good hands with our compassionate and
+                    well-trained staff, who treat every pet like family.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    </br>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer_items">
+        <span id="copyright">
+            Copyright © 2024 Luanne Sousa.
+        </span>
+    </div>
+
+
+
     <script src="src/javascript/script.js"></script>
 </body>
+
 </html>

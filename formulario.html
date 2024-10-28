@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <!-- Carregar icone que fica localizado na barra de link -->
+    <link rel="icon" type="image/x-icon" href="/src/assets/arquivo_donuts/confete.png">
+
+    <title>Faça seu pedido!</title>
+</head>
+
+<body class="corpo-formulario">
+    <div class="container">
+        <div class="form-image">
+            <img src="src/assets/arquivo_donuts/varios2.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>Descreva seu pedido!</h1>
+                    </div>
+                </div>
+
+                <div class="titulo">
+                    <h4>Dados de Contato:</h4>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                </div>
+
+                <div class="titulo">
+                    <h4>Monte sua caixinha:</h4>
+                </div>
+
+                </br>
+
+                <div class="caixa-inputs">
+                    <div class="caixa-group">
+                        <div class="caixa-input">
+                            <input id="caixinha4" type="radio" name="caixinha" value="Caixinha com 4 unidades"
+                                onclick="exibirCampo(false)">
+                            <label for="caixinha4">Caixinha com 4 unidades</label>
+                        </div>
+
+                        <div class="caixa-input">
+                            <input id="caixinha6" type="radio" name="caixinha" value="Caixinha com 6 unidades"
+                                onclick="exibirCampo(false)">
+                            <label for="caixinha6">Caixinha com 6 unidades</label>
+                        </div>
+
+                        <div class="caixa-input">
+                            <input id="caixinhaMais" type="radio" name="caixinha" value="Acima de 20 Unidades"
+                                onclick="exibirCampo(true)">
+                            <label for="caixinhaMais">Acima de 20 Unidades</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="qtdCaixas" class="titulo">
+                    <h5>Quantidade de caixinhas:</h5>
+                    <div class="input-box">
+                        <input id="caixas" type="number" name="caixas" placeholder="Digite a quantidade de caixinhas"
+                            required>
+                    </div>
+                </div>
+
+                <div id="qtdItens" class="esconder">
+                    <h5>Quantidade de cake donuts:</h5>
+                    <div class="input-box">
+                        <input id="itens" type="number" name="itens" placeholder="Digite a quantidade de cake donuts"
+                            required>
+                    </div>
+                </div>
+
+                <div id="massa" class="titulo">
+                    <h5>Massa:</h5>
+                    <div class="caixa-inputs">
+                        <div class="caixa-group">
+                            <div class="caixa-input">
+                                <input id="massa1" type="checkbox" name="massa">
+                                <label for="massa1">Baunilha</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="massa2" type="checkbox" name="massa">
+                                <label for="massa2">Chocolate</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="massa3" type="checkbox" name="massa">
+                                <label for="massa3">Casadinho</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cobertura" class="titulo">
+                    <h5>Cobertura:</h5>
+                    <div class="caixa-inputs">
+                        <div class="caixa-group">
+                            <div class="caixa-input">
+                                <input id="cobertura1" type="checkbox" name="cobertura">
+                                <label for="cobertura1">Chocolate Preto</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="cobertura2" type="checkbox" name="cobertura">
+                                <label for="cobertura2">Chocolate Branco</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="cobertura3" type="checkbox" name="cobertura">
+                                <label for="cobertura3">Chocolate Colorido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="confeitos" class="titulo">
+                    <h5>Toppings:</h5>
+                    <div class="caixa-inputs">
+                        <div class="caixa-group">
+                            <div class="caixa-input">
+                                <input id="toppings1" type="checkbox" name="toppings">
+                                <label for="toppings1">Confete</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="toppings2" type="checkbox" name="toppings">
+                                <label for="toppings2">Granulado Chocolate Meio Amargo</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="toppings3" type="checkbox" name="toppings">
+                                <label for="toppings3">Granulado Colorido</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="toppings4" type="checkbox" name="toppings">
+                                <label for="toppings4">Paçoca</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="toppings5" type="checkbox" name="toppings">
+                                <label for="toppings5">Amendoin</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="toppings6" type="checkbox" name="toppings">
+                                <label for="toppings6">Coco</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="recheio" class="titulo">
+                    <h5>Recheios:</h5>
+                    <div class="caixa-inputs">
+                        <div class="caixa-group">
+                            <div class="caixa-input">
+                                <input id="recheios1" type="checkbox" name="recheios">
+                                <label for="recheios1">Nutella</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="recheios2" type="checkbox" name="recheios">
+                                <label for="recheios2">Doce de Leite</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="recheios3" type="checkbox" name="recheios">
+                                <label for="recheios3">Brigadeiro de Chocolate</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="recheios4" type="checkbox" name="recheios">
+                                <label for="recheios4">Brigadeiro de Morango</label>
+                            </div>
+
+                            <div class="caixa-input">
+                                <input id="recheios5" type="checkbox" name="recheios">
+                                <label for="recheios5">Brigadeiro de Ninho</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="textMessage" class="esconder">
+                    <h5>Descreva seu pedido:</h5>
+                    <textarea id="textTamanho" name="message" rows="10"
+                        cols="30">Descreva como será seus cake donuts</textarea>
+                </div>
+
+                <div id="caixaImagem" class="esconder">
+                    <h5>Escolha uma decoração de referência:</h5>
+                    <input type="file" id="imagem" name="imagem" accept="imagem/*">
+                </div>
+
+         
+
+                <div class="titulo">
+                    <h4>Dados para entrega:</h4>
+                </div>
+
+                </br>
+
+                <div id="endereco" class="titulo">
+                    <h5>Endereço:</h5>
+                    <div class="input-box">
+                        <input id="caixas" type="text" name="caixas" placeholder="Digite o seu endereço" required>
+                    </div>
+                </div>
+                <div id="horario" class="titulo">
+                    <h5>Horário para entrega:</h5>
+                    <div class="input-box">
+                        <input id="caixas" type="text" name="caixas" placeholder="Digite o horário para entrega"
+                            required>
+                    </div>
+                </div>
+
+
+                <div class="salvar-button">
+                    <button><a href="#">Enviar</a> </button>
+                </div>
+
+                </br>
+
+                <div class="instrucoes-link">
+                    <a href="instrucoesPedido.html" target="_blank">Como fazer o pedido?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+
+</body>
+
+</html>
