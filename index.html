@@ -28,8 +28,6 @@
 
 <body id="fundo">
     <header>
-
-        <div></div>
         <nav id="navbar">
             <img src="src/assets/logo.png" alt="Logo da aplicação">
 
@@ -37,21 +35,27 @@
                 <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
+                <li class="nav-item active">
+                    <a href="#saiba">Saiba Mais</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://drive.google.com/file/d/1fsk28QAawAh3_ifZ4xjpSZPmB6kgQrkH/view?usp=sharing" target="_blank">Cardápio Online</a>
                 </li>
             </ul>
 
             <div class="social-media-buttons">
-                <a href="https://wa.me/5521967235610">
+                <a href="https://wa.me/5521967235610" target="_blank"> 
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
-                <a href="https://www.instagram.com/luh_minicakedonuts/">
+                <a href="https://www.instagram.com/luh_minicakedonuts/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="https://www.tiktok.com/@luh_minicakedonuts">
+                <a href="https://www.tiktok.com/@luh_minicakedonuts" target="_blank">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </div>
@@ -62,22 +66,28 @@
                 <span></span>
             </button>
         </nav>
-
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <button class="btn-default">
-                    <span><i class="fa fa-thumbs-up"></i></span>
-                    <a href="formulario.html">Peça aqui</a>
-                </button>
-            </ul>
-        </div>
     </header>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item">
+                <a href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="#saiba">Saiba Mais</a>
+            </li>
+            <li class="nav-item">
+                <a href="#produtos">Produtos</a>
+            </li>
+            <li class="nav-item active">
+                <a href="https://drive.google.com/file/d/1fsk28QAawAh3_ifZ4xjpSZPmB6kgQrkH/view?usp=sharing" target="_blank">Cardápio Online</a>
+            </li>
+            <button class="btn-default">
+                <span><i class="fa fa-thumbs-up"></i></span>
+                <a href="formulario.html">Peça aqui</a>
+            </button>
+        </ul>
+    </div>
 
     <section id="home">
         <div id="cta">
@@ -111,84 +121,117 @@
         </div>
     </section>
 
-
-    <section class="section__container about__container" id="about">
+    <section class="section__container about__container" id="saiba">
         <p class="section__subheader">Saiba mais</p>
         <h2 class="section__header">Conheça nossos cake donuts</h2>
-        <div class="about__row">
-            <div class="about__image">
-                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+        <h3 class="section__header2">Perfeito para todas as ocasiões</h2>
+            <div class="about__row">
+                <div class="about__image">
+                    <img src="src/assets/unidades_donuts/CaixinhaPresente.heic" alt="about" />
+                </div>
+                <div class="about__content">
+                    <span><i class="fa-solid fa-gift"></i></span>
+                    <h4>Presenteie alguém especial!</h4>
+                    <p>
+                        Para aquela pessoa super querida, dê uma caixinha personalizada e faça a sorrir! :D
+                    </p>
+                </div>
             </div>
-            <div class="about__content">
-                <span><i class="fa-solid fa-gift"></i></span>
-                <h4>Presenteie alguém especial!</h4>
-                <p>
-                    Our expert veterinarians are here to provide comprehensive care and
-                    guidance to ensure your pet stays in perfect health.
-                </p>
+            <div class="about__row">
+                <div class="about__image">
+                    <img src="src/assets/unidades_donuts/CaixinhaTradi.heic" alt="about" />
+                </div>
+                <div class="about__content">
+                    <span><img src="src/assets/arquivo_donuts/mini-donut.png" alt="about-icon" /></span>
+                    <h4>Mate sua vontade de comer um docinho!</h4>
+                    <p>
+                        Permita-se um momento doce! Um docinho com café <i class="fa fa-coffee" aria-hidden="true"></i>
+                        ou após o almoço,
+                        nada melhor que um cake donuts de chocolate recheado de brigadeiro.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="about__row">
-            <div class="about__image">
-                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
+            <div class="about__row">
+                <div class="about__image">
+                    <img src="src/assets/unidades_donuts/CaixinhaAmor2.heic" alt="about" />
+                </div>
+                <div class="about__content">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <h4>Dê um mimo para o seu love!</h4>
+                    <p>
+                        Surpreenda seu amor com um doce feito especialmente para ele! Nossos cake donuts personalizados
+                        são a maneira
+                        perfeita de mostrar carinho e deixar momentos a dois ainda mais especiais!
+                    </p>
+                </div>
             </div>
-            <div class="about__content">
-                <span><img src="src/assets/arquivo_donuts/mini-donut.png" alt="about-icon" /></span>
-                <h4>Mate sua vontade de comer um docinho!</h4>
-                <p>
-                    Your pet will be in good hands with our compassionate and
-                    well-trained staff, who treat every pet like family.
-                </p>
+            <div class="about__row">
+                <div class="about__image">
+                    <img src="src/assets/unidades_donuts/Lembrancinha.heic" alt="about" />
+                </div>
+                <div class="about__content">
+                    <span><i class="fa-solid fa-cake-candles"></i></span>
+                    <h4>Deixe seu evento ainda mais saboroso e decorado!</h4>
+                    <p>
+                        Celebre seu aniversário com um toque especial! Nossos cake donuts
+                        personalizados são a combinação
+                        perfeita de sabor e criatividade, escolha perfeita
+                        para surpreender seus convidados e tornar cada momento inesquecível.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="about__row">
-            <div class="about__image">
-                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
-            </div>
-            <div class="about__content">
-                <span><i class="fa-solid fa-heart"></i></span>
-                <h4>Dê um mimo para o seu love!</h4>
-                <p>
-                    From bathing to styling, we offer professional grooming services to
-                    keep your pet looking and feeling their best.
-                </p>
-            </div>
-        </div>
-        <div class="about__row">
-            <div class="about__image">
-                <img src="src/assets/arquivo_donuts/granulado.png" alt="about" />
-            </div>
-            <div class="about__content">
-                <span><i class="fa-solid fa-cake-candles"></i></span>
-                <h4>Deixe seu evento ainda mais saboroso e decorado!</h4>
-                <p>
-                    Your pet will be in good hands with our compassionate and
-                    well-trained staff, who treat every pet like family.
-                </p>
+    </section>
+
+    </br></br>
+
+    <section class="product" id="produtos">
+        <div class="section__produto product__container">
+            <p class="section__subheader">Produtos</p>
+            <h2 class="section__header">Alguns de nossos produtos</h2>
+            <div class="product__grid">
+                <div class="product__card">
+                    <img src="src/assets/unidades_donuts/2Unidades.heic" alt="product" />
+                    <h4>Caixinha com 2 Unidades</h4>
+                    <p>
+                        Caixinha especial com 2 unidades da Linha Tradicional.
+                    </p>
+                    <h3>R$8,00</h3>
+                </div>
+                <div class="product__card">
+                    <img src="src/assets/unidades_donuts/4Unidades.heic" alt="product" />
+                    <h4>Caixinha com 4 Unidades</h4>
+                    <p>
+                        Caixinha simples com 4 unidades da Linha Tradicional Recheados.
+                    </p>
+                    <h3>R$12,00</h3>
+                </div>
+                <div class="product__card">
+                    <img src="src/assets/unidades_donuts/CaixinhaGourmet.heic" alt="product" />
+                    <h4>Caixinha com 6 Unidades</h4>
+                    <p>
+                        Caixinha simples com 6 unidades da Linha Gourmet.
+                    </p>
+                    <h3>R$24,00</h3>
+                </div>
+                <div class="product__card">
+                    <img src="src/assets/unidades_donuts/6Unidades.heic" alt="product" />
+                    <h4>Caixinha com 6 Unidades</h4>
+                    <p>
+                        Caixinha simples com 6 unidades da Linha Tradicional Recheados.
+                    </p>
+                    <h3>R$18,00</h3>
+                </div>
             </div>
         </div>
     </section>
 
+
     </br>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="footer_items">
-        <span id="copyright">
+    <footer>
+        <div id="footer_items">
             Copyright © 2024 Luanne Sousa.
-        </span>
-    </div>
-
-
-
+        </div>
+    </footer>
     <script src="src/javascript/script.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 #home {
-    min-height: calc(100vh - 91px);
+    min-height: calc(93vh - 91px);
     position: relative;
 }
 
@@ -128,17 +128,12 @@ main div:hover .button_donuts:not(:hover) {
     }
 
     #fundo {
-        background: #fff0f0 url("/src/assets/fundo2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #fff0f0;
     }
 }
 
 @media screen and (max-width: 450px) {
     #fundo {
-        background: #fff0f0 url("/src/assets/fundo2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-
+        background: #fff0f0;
     }
 }

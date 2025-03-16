@@ -1,17 +1,6 @@
 #footer_items {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px 0px 83%;
-    align-items: center;
-}
-
-#copyright {
+    padding: 1rem;
+    font-size: 0.9rem;
     color: var(--color-neutral-1);;
-}
-
-@media screen and (max-width: 600px) {
-    #footer_items {
-        padding: 0px 0px 0px 20%;
-    }
-
+    text-align: center;
 }

@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="src/assets/preview.png" width="100%"  />
+  <img src="src/assets/preview.PNG" width="100%"  />
 </p>
 
 ## Projeto
@@ -20,7 +20,6 @@ Site sobre venda de cake donuts
 
 - Uso semântico do HTML
 - Uso do CSS Flexbox
-- Carrousel de imagens
 - Menu lateral
 - Carregamento de fonte externa
 - Uso de cores gradientes no texto

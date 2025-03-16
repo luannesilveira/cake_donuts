@@ -1,12 +1,12 @@
 .section__container {
-  padding: 28px 8%;
+  padding: 28px 19%;
 
 }
 
 .about__row {
   margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
   overflow: hidden;
 }
@@ -24,6 +24,7 @@
 .about__content {
   flex: 1;
   text-align: center;
+  align-content: center;
 }
 
 .about__content span {
@@ -42,20 +43,25 @@
   max-width: 40px;
 }
 
-.about__row:nth-child(3) .about__content span {
-  background-color: #fdf2d9;
-}
-
 .about__row:nth-child(4) .about__content span {
-  background-color: #e8f7fe;
+  background-color: #ff98d4;
 }
 
 .about__row:nth-child(5) .about__content span {
-  background-color: #fbebf1;
+  background-color: #6cbae7;
 }
 
 .about__row:nth-child(6) .about__content span {
-  background-color: #f3b1c9;
+  background-color: #fc6161;
+}
+
+.about__row:nth-child(7) .about__content span {
+  background-color: #ffe364;
+}
+
+.about__image {
+  max-width: unset;
+  margin-inline: auto;
 }
 
 .about__content h4 {
@@ -74,28 +80,6 @@
   color: var(--color-neutral-1);
 }
 
-.about__row {
-  flex-direction: row;
-  align-items: center;
-}
-
-.about__row:nth-child(4) {
-  flex-direction: row-reverse;
-}
-
-.about__row:nth-child(6) {
-  flex-direction: row-reverse;
-}
-
-.about__image {
-  max-width: unset;
-  margin-inline: auto;
-}
-
-.about__content {
-  text-align: left;
-}
-
 .section__subheader {
   font-size: 1.2rem;
   font-weight: 500;
@@ -111,26 +95,31 @@
   line-height: 3.5rem;
 }
 
+.section__header2 {
+  font-size: 1.3rem;
+  font-weight: 350;
+  color: var(--color-primary-3);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
 .about__image img {
   display: flex;
   width: 100%;
 }
 
-
-@media (width > 540px) {
-  .header__content h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
-  }
-}
-
 @media (width > 768px) {
+
   .about__row {
     flex-direction: row;
     align-items: center;
   }
 
-  .about__row:nth-child(4) {
+  .about__row:nth-child(5) {
+    flex-direction: row-reverse;
+  }
+
+  .about__row:nth-child(7) {
     flex-direction: row-reverse;
   }
 
@@ -140,7 +129,6 @@
   }
 
   .about__content {
-    text-align: left;
+    text-align: center;
   }
-
 }

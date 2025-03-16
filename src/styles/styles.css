@@ -4,10 +4,11 @@
 @import url('footer.css');
 @import url('pedido.css');
 @import url('detalhes.css');
+@import url('produtos.css');
 
 :root {
-    --color-primary-1: ##fff0f0;
-    --color-primary-2: ##fff0f2;
+    --color-primary-1: #fff0f0;
+    --color-primary-2: #fff0f2;
     --color-primary-3: #f16df3;
     --color-primary-4: #e78ce8d8;
     --color-primary-5: #e68ce8;

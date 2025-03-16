@@ -2,7 +2,6 @@ header {
     width: 100%;
     padding: 36px 8%;
     top: 0;
-    background-color: var(--color-primary-1);
     z-index: 3;
 }
 
@@ -78,9 +77,11 @@ header img {
 }
 
 @media screen and (max-width: 1170px) {
+
     header {
-        background-color: var(--color-primary-1);
-        padding: 15px 40px;
+        background-color: var(--color-primary-5);
+        padding: 2px 40px;
+        position: sticky;
     }
 
     #nav_list,
@@ -100,13 +101,21 @@ header img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: var(--color-primary-5);     
     }
 
     #mobile_nav_list {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
+        gap: 1rem;
+        background-color: var(--white);
+        transition: translate(-8px, -7px);
     }
 
     #mobile_nav_list .nav-item {
