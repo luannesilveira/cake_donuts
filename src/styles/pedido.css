@@ -134,7 +134,7 @@ input[type='checkbox'] {
     accent-color: var(--color-primary-3);
 }
 
-#qtdItens{
+#qtd-itens{
     color: var(--color-neutral-1);
 }
 
@@ -146,7 +146,7 @@ input[type='checkbox'] {
     margin-bottom: 2.1rem;
 }
 
-#textMessage{
+#text-message{
     width: 100%;
     height: 100px;
     color: var(--color-neutral-1);
@@ -158,7 +158,7 @@ input[type='checkbox'] {
 }
 
 
-#textTamanho{
+#message{
     width: 100%;
     height: 100px;
     color: var(--color-neutral-1);
@@ -170,24 +170,41 @@ input[type='checkbox'] {
     font-size: 0.8rem;
 }
 
-#textTamanho:hover {
+#message:hover {
     background-color: #eeeeee75;
 }
 
-#textTamanho:focus-visible {
+#message:focus-visible {
     outline: 1px solid var(--color-primary-3);;
 }
 
-#textTamanho::placeholder {
+#message::placeholder {
     color: var(--color-neutral-1);
 }
 
-#caixaImagem{
+#decor-file{
     color: var(--color-neutral-1);
     margin-bottom: 2.1rem;
 }
 
-.salvar-button button {
+input[type="file" i] {
+    display: none;
+}
+
+#decor-file label {
+    background-color: var(--color-primary-4);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 0.93rem;
+}
+
+#decor-file label:hover {
+    background-color: var(--color-primary-3);
+}
+
+.save-button button {
     width: 30%;
     margin-top: 2.5rem;
     border: none;
@@ -197,11 +214,11 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
-.salvar-button button:hover {
+.save-button button:hover {
     background-color: var(--color-primary-3);
 }
 
-.salvar-button button a {
+.save-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;

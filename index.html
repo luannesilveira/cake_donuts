@@ -36,10 +36,10 @@
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#saiba">Saiba Mais</a>
+                    <a href="#about">Saiba Mais</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#produtos">Produtos</a>
+                    <a href="#product">Produtos</a>
                 </li>
                 <li class="nav-item active">
                     <a href="https://drive.google.com/file/d/1fsk28QAawAh3_ifZ4xjpSZPmB6kgQrkH/view?usp=sharing" target="_blank">Cardápio Online</a>
@@ -71,41 +71,45 @@
     <div id="mobile_menu">
         <ul id="mobile_nav_list">
             <li class="nav-item">
-                <a href="#home">Início</a>
+                <a class="scroll-home" href="#home">Início</a>
             </li>
             <li class="nav-item">
-                <a href="#saiba">Saiba Mais</a>
+                <a id="scroll-about" href="#about">Saiba Mais</a>
             </li>
             <li class="nav-item">
-                <a href="#produtos">Produtos</a>
+                <a id="scroll-product" href="#product">Produtos</a>
             </li>
             <li class="nav-item active">
                 <a href="https://drive.google.com/file/d/1fsk28QAawAh3_ifZ4xjpSZPmB6kgQrkH/view?usp=sharing" target="_blank">Cardápio Online</a>
             </li>
-            <button class="btn-default">
+            <button class="btn-pedido">
                 <span><i class="fa fa-thumbs-up"></i></span>
-                <a href="formulario.html">Peça aqui</a>
+                <a href="formularioDePedido.html">Peça aqui</a>
             </button>
         </ul>
     </div>
 
-    <section id="home">
-        <div id="cta">
-            <h4>Bem Vindos(as)!</h4>
-            <h1 class="title">Cada mordida uma <span>explosão</span> de sabor!</h1>
-            <h2>Descubra o sabor irresistível dos nossos Cake Donuts <span>:)</span></h2>
-            <p class="description">
-                Macios por dentro, crocantes por fora e sempre fresquinhos! Feitos com ingredientes
-                de alta qualidade e um toque especial de carinho.
-            </p>
+    <section class="section-home">
+        <div id="home">       
+            
+            <div class="text-wellcome">
+                <h4 id="typewriter">Bem Vindos(as)!</h4>
+            </div>
 
-            <button class="btn-default">
-                <a href="formulario.html">Peça aqui!
+            <h1>Cada mordida uma <span>explosão</span> de sabor!</h1>
+            
+            <h2>Descubra o sabor irresistível dos nossos Cake Donuts <span>:)</span></h2>
+            
+            <p>Macios por dentro, crocantes por fora e sempre fresquinhos! Feitos com ingredientes
+            de alta qualidade e um toque especial de carinho.</p>
+
+            <button class="btn-pedido">
+                <a href="formularioDePedido.html">Peça aqui!
                     <span><i class="fa-solid fa-arrow-right"></i></span>
                 </a>
             </button>
 
-            <div id="peq_donuts">
+            <div>
                 <button class="button_donuts" type="button">
                     <img src="src/assets/arquivo_donuts/chocolate.png">
                 </button>
@@ -121,15 +125,17 @@
         </div>
     </section>
 
-    <section class="section__container about__container" id="saiba">
-        <p class="section__subheader">Saiba mais</p>
-        <h2 class="section__header">Conheça nossos cake donuts</h2>
-        <h3 class="section__header2">Perfeito para todas as ocasiões</h2>
-            <div class="about__row">
-                <div class="about__image">
-                    <img src="src/assets/unidades_donuts/CaixinhaPresente.heic" alt="about" />
+    <section class="section-about">
+        <div id="about">
+            <p class="section-subheader">Saiba mais</p>
+            <h2 class="section-header">Conheça nossos cake donuts</h2>
+            <h3 class="section-header2">Perfeito para todas as ocasiões</h2>
+            
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="src/assets/unidades_donuts/CaixinhaPresente.heic"/>
                 </div>
-                <div class="about__content">
+                <div class="about-content">
                     <span><i class="fa-solid fa-gift"></i></span>
                     <h4>Presenteie alguém especial!</h4>
                     <p>
@@ -137,12 +143,12 @@
                     </p>
                 </div>
             </div>
-            <div class="about__row">
-                <div class="about__image">
-                    <img src="src/assets/unidades_donuts/CaixinhaTradi.heic" alt="about" />
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="src/assets/unidades_donuts/CaixinhaTradi.heic"/>
                 </div>
-                <div class="about__content">
-                    <span><img src="src/assets/arquivo_donuts/mini-donut.png" alt="about-icon" /></span>
+                <div class="about-content">
+                    <span><img src="src/assets/arquivo_donuts/mini-donut.png"/></span>
                     <h4>Mate sua vontade de comer um docinho!</h4>
                     <p>
                         Permita-se um momento doce! Um docinho com café <i class="fa fa-coffee" aria-hidden="true"></i>
@@ -151,11 +157,11 @@
                     </p>
                 </div>
             </div>
-            <div class="about__row">
-                <div class="about__image">
-                    <img src="src/assets/unidades_donuts/CaixinhaAmor2.heic" alt="about" />
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="src/assets/unidades_donuts/CaixinhaAmor2.heic">
                 </div>
-                <div class="about__content">
+                <div class="about-content">
                     <span><i class="fa-solid fa-heart"></i></span>
                     <h4>Dê um mimo para o seu love!</h4>
                     <p>
@@ -165,11 +171,11 @@
                     </p>
                 </div>
             </div>
-            <div class="about__row">
-                <div class="about__image">
-                    <img src="src/assets/unidades_donuts/Lembrancinha.heic" alt="about" />
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="src/assets/unidades_donuts/Lembrancinha.heic"/>
                 </div>
-                <div class="about__content">
+                <div class="about-content">
                     <span><i class="fa-solid fa-cake-candles"></i></span>
                     <h4>Deixe seu evento ainda mais saboroso e decorado!</h4>
                     <p>
@@ -180,41 +186,42 @@
                     </p>
                 </div>
             </div>
+        </div>
     </section>
 
-    </br></br>
+    <br><br>
 
-    <section class="product" id="produtos">
-        <div class="section__produto product__container">
-            <p class="section__subheader">Produtos</p>
-            <h2 class="section__header">Alguns de nossos produtos</h2>
-            <div class="product__grid">
-                <div class="product__card">
-                    <img src="src/assets/unidades_donuts/2Unidades.heic" alt="product" />
+    <section class="section-product">
+        <div id="product">
+            <p class="section-subheader">Produtos</p>
+            <h2 class="section-header">Alguns de nossos produtos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="src/assets/unidades_donuts/2Unidades.heic"/>
                     <h4>Caixinha com 2 Unidades</h4>
                     <p>
                         Caixinha especial com 2 unidades da Linha Tradicional.
                     </p>
                     <h3>R$8,00</h3>
                 </div>
-                <div class="product__card">
-                    <img src="src/assets/unidades_donuts/4Unidades.heic" alt="product" />
+                <div class="product-card">
+                    <img src="src/assets/unidades_donuts/4Unidades.heic" />
                     <h4>Caixinha com 4 Unidades</h4>
                     <p>
                         Caixinha simples com 4 unidades da Linha Tradicional Recheados.
                     </p>
                     <h3>R$12,00</h3>
                 </div>
-                <div class="product__card">
-                    <img src="src/assets/unidades_donuts/CaixinhaGourmet.heic" alt="product" />
-                    <h4>Caixinha com 6 Unidades</h4>
+                <div class="product-card">
+                    <img src="src/assets/unidades_donuts/CaixinhaGourmet.heic"/>
+                    <h4>Caixinha com 6 Unidades Gourmet</h4>
                     <p>
                         Caixinha simples com 6 unidades da Linha Gourmet.
                     </p>
                     <h3>R$24,00</h3>
                 </div>
-                <div class="product__card">
-                    <img src="src/assets/unidades_donuts/6Unidades.heic" alt="product" />
+                <div class="product-card">
+                    <img src="src/assets/unidades_donuts/6Unidades.heic"/>
                     <h4>Caixinha com 6 Unidades</h4>
                     <p>
                         Caixinha simples com 6 unidades da Linha Tradicional Recheados.
@@ -225,14 +232,18 @@
         </div>
     </section>
 
+    <div id="btn-up">
+        <a class="scroll-home" href="#home"><i class="fa-solid fa-arrow-circle-up"></i></a>
+    </div>
 
-    </br>
     <footer>
-        <div id="footer_items">
+        <div id="footer-items">
             Copyright © 2024 Luanne Sousa.
         </div>
     </footer>
+
     <script src="src/javascript/script.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/logo.png" width="250px" />
+  <img src="src/assets/logo.png" width="100px" />
 </p>
 
 <p align="center">
@@ -18,10 +18,5 @@ Site sobre venda de cake donuts
 
 ## Conhecimentos abordados
 
-- Uso semântico do HTML
-- Uso do CSS Flexbox
-- Menu lateral
-- Carregamento de fonte externa
-- Uso de cores gradientes no texto
 
 

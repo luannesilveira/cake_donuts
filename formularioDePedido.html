@@ -33,7 +33,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome" required>
+                        <input id="firstname" type="text" name="firstname" placeholder="Informe seu nome" required>
                     </div>
 
                     <div class="input-box">
@@ -70,18 +70,18 @@
                     </div>
                 </div>
 
-                <div id="qtdCaixas" class="titulo">
+                <div id="qtd-caixas" class="titulo">
                     <h5>Quantidade de caixinhas:</h5>
                     <div class="input-box">
-                        <input id="caixas" type="number" name="caixas" placeholder="Digite a quantidade de caixinhas"
+                        <input id="caixas" type="number" name="caixas" placeholder="Informe a quantidade de caixinhas"
                             required>
                     </div>
                 </div>
 
-                <div id="qtdItens" class="esconder">
+                <div id="qtd-itens" class="esconder">
                     <h5>Quantidade de cake donuts:</h5>
                     <div class="input-box">
-                        <input id="itens" type="number" name="itens" placeholder="Digite a quantidade de cake donuts"
+                        <input id="itens" type="number" name="itens" placeholder="Informe a quantidade de cake donuts"
                             required>
                     </div>
                 </div>
@@ -199,45 +199,46 @@
                     </div>
                 </div>
 
-                <div id="textMessage" class="esconder">
+                <div id="text-message" class="esconder">
                     <h5>Descreva seu pedido:</h5>
-                    <textarea id="textTamanho" name="message" rows="10"
+                    <textarea id="message" name="message" rows="10"
                         cols="30">Descreva como será seus cake donuts</textarea>
                 </div>
 
-                <div id="caixaImagem" class="esconder">
+                <div id="decor-file" class="esconder">
                     <h5>Escolha uma decoração de referência:</h5>
-                    <input type="file" id="imagem" name="imagem" accept="imagem/*">
+                    <br>
+                    <label for="input-file">Clique aqui e selecione uma imagem</label>
+                    <input id="input-file" type="file">
+                    <span id='file-name'></span>
                 </div>
-
-         
 
                 <div class="titulo">
                     <h4>Dados para entrega:</h4>
                 </div>
 
-                </br>
+                <br>
 
                 <div id="endereco" class="titulo">
                     <h5>Endereço:</h5>
                     <div class="input-box">
-                        <input id="caixas" type="text" name="caixas" placeholder="Digite o seu endereço" required>
+                        <input id="input-endereco" type="text" name="input-endereco" placeholder="Informe o seu endereço" required>
                     </div>
                 </div>
                 <div id="horario" class="titulo">
                     <h5>Horário para entrega:</h5>
                     <div class="input-box">
-                        <input id="caixas" type="text" name="caixas" placeholder="Digite o horário para entrega"
+                        <input id="input-horario" type="text" name="input-horario" placeholder="Informe o horário para entrega"
                             required>
                     </div>
                 </div>
 
 
-                <div class="salvar-button">
+                <div class="save-button">
                     <button><a href="#">Enviar</a> </button>
                 </div>
 
-                </br>
+                <br>
 
                 <div class="instrucoes-link">
                     <a href="instrucoesPedido.html" target="_blank">Como fazer o pedido?</a>

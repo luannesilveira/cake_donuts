@@ -33,7 +33,7 @@ $(document).ready(function () {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
-    ScrollReveal().reveal('#cta', {
+    ScrollReveal().reveal('#home', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
@@ -46,17 +46,16 @@ function changeMenu() {
     menu.classList.toggle('active')
 }
 
-
+//regras de exibição de campos
 function exibirCampo(show) {
-    const message = document.getElementById("textMessage");
-    const imagem = document.getElementById("caixaImagem");
+    const message = document.getElementById("text-message");
+    const imagem = document.getElementById("decor-file");
     const massa = document.getElementById("massa");
     const cobertura = document.getElementById("cobertura");
     const confeitos = document.getElementById("confeitos");
     const recheio = document.getElementById("recheio");
-    const qtdItens = document.getElementById("qtdItens");
-    const qtdCaixas = document.getElementById("qtdCaixas");
-
+    const qtdCaixas = document.getElementById("qtd-caixas");
+    const qtdItens = document.getElementById("qtd-itens");
 
     if (show) {
         message.classList.remove("esconder");
@@ -83,39 +82,64 @@ const scrollRevealOption = {
     distance: "50px",
     origin: "bottom",
     duration: 1000,
-  };
+};
 
 ScrollReveal().reveal(
-    ".about__row:nth-child(3) .about__image img, .about__row:nth-child(5) .about__image img",
+    ".about-row:nth-child(3) .about-image img, .about-row:nth-child(5) .about-image img",
     {
         ...scrollRevealOption,
         origin: "left",
     }
 );
+
 ScrollReveal().reveal(
-    ".about__row:nth-child(4) .about__image img, .about__row:nth-child(6) .about__image img",
+    ".about-row:nth-child(4) .about-image img, .about-row:nth-child(6) .about-image img",
     {
         ...scrollRevealOption,
         origin: "right",
     }
 );
 
-ScrollReveal().reveal(".about__content span", {
+ScrollReveal().reveal(".about-content span", {
     ...scrollRevealOption,
     delay: 200,
 });
 
-ScrollReveal().reveal(".about__content h4", {
+ScrollReveal().reveal(".about-content h4", {
     ...scrollRevealOption,
     delay: 500,
 });
 
-ScrollReveal().reveal(".about__content p", {
+ScrollReveal().reveal(".about-content p", {
     ...scrollRevealOption,
     delay: 700,
 });
 
-ScrollReveal().reveal(".product__card", {
+ScrollReveal().reveal(".product-card", {
     ...scrollRevealOption,
     interval: 500,
-  });
+});
+
+
+const scrollToHomeButton = document.getElementsByClassName('scroll-home');
+
+Array.from(scrollToHomeButton).forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector('#home').scrollIntoView({
+            behavior: 'smooth' 
+        });
+    });
+});
+
+//Exibir na tela o nome do arquivo selecionado
+var $input = document.getElementById('input-file'),
+    $fileName = document.getElementById('file-name');
+
+if ($input && $fileName) {
+    $input.addEventListener('change', function () {
+        if (this.files && this.files[0]) {
+            $fileName.textContent = this.files[0].name;
+        }
+    });
+}

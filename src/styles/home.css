@@ -1,9 +1,11 @@
-#home {
+.section-home {
     min-height: calc(93vh - 91px);
     position: relative;
+    padding: 28px 8%;
+
 }
 
-#cta {
+#home {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -11,42 +13,56 @@
     margin-top: 3%;
 }
 
-#fundo {
-    background: #fff0f0 url("/src/assets/fundo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-
-#cta .title {
-    font-size: 4rem;
-    color: var(--color-neutral-1);
-}
-
-#cta .title span {
-    color: var(--color-primary-3);
-}
-
-#cta h4 {
+.text-wellcome{
     max-width: fit-content;
     margin-bottom: 1rem;
     padding: 5px 15px;
     font-size: 1rem;
     font-weight: 600;
     background-color: rgba(255, 0, 255, 0.096);
-    border-radius: 5rem;
+    color: var(--color-neutral-1);
+    border-radius: 20px;
+}
+
+#typewriter{   
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden; 
+    width: 14ch; 
+    animation: typing 2s steps(10), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+
+    }
+}
+
+#home h1 {
+    font-size: 4rem;
     color: var(--color-neutral-1);
 }
 
-#cta h2 {
-    color: var(--color-neutral-1);
-}
-
-#cta h2 span{
+#home h1 span {
     color: var(--color-primary-3);
 }
 
-#cta .description {
+#home h2 {
+    color: var(--color-neutral-1);
+}
+
+#home h2 span {
+    color: var(--color-primary-3);
+}
+
+#home p {
     font-size: 1.2rem;
     color: var(--color-neutral-1);
 }
@@ -57,11 +73,11 @@
     transition: all 0.4s;
 }
 
-main div:hover .button_donuts:hover {
+#home div:hover .button_donuts:hover {
     transform: translateY(-20px);
 }
 
-main div:hover .button_donuts:not(:hover) {
+#home div:hover .button_donuts:not(:hover) {
     opacity: 0.6;
     filter: grayscale(0.3);
 }
@@ -71,7 +87,7 @@ main div:hover .button_donuts:not(:hover) {
     height: auto;
 }
 
-.btn-default {
+.btn-pedido {
     font-size: 1rem;
     border: none;
     align-items: center;
@@ -89,51 +105,36 @@ main div:hover .button_donuts:not(:hover) {
 }
 
 
-.btn-default:hover {
+.btn-pedido:hover {
     box-shadow: 0px 0px 10px 2px var(--color-primary-3);
     background-color: var(--color-primary-3);
 }
 
-.btn-default a {
+.btn-pedido a {
     text-decoration: none;
     color: var(--color-neutral-1);
 }
 
-
-.btn-default a span {
+.btn-pedido a span {
     padding: 2px 7px;
     font-size: 1.0rem;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 100%;
 }
 
-.btn-default a:hover span {
+.btn-pedido a:hover span {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 1340px) {
-    #home {
+    #home  {
         min-height: 100%;
         padding-top: 0px;
     }
 
-    #cta {
+    #home {
         width: 100%;
         text-align: center;
         align-items: center;
-    }
-
-    #cta .title {
-        font-size: 3rem;
-    }
-
-    #fundo {
-        background: #fff0f0;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #fundo {
-        background: #fff0f0;
     }
 }

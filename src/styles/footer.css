@@ -1,6 +1,22 @@
-#footer_items {
+#footer-items {
     padding: 1rem;
     font-size: 0.9rem;
-    color: var(--color-neutral-1);;
+    color: var(--color-neutral-1);
     text-align: center;
+}
+
+#btn-up{
+    padding: 28px 8%;
+}
+
+#btn-up a i{
+    font-size: 2.1rem;
+    color: var(--color-primary-3);
+    cursor: pointer;
+    float: right;
+    border-radius: 100%;
+}
+
+#btn-up a i:hover{
+    box-shadow: 0px 0px 10px 2px var(--color-primary-3);
 }
