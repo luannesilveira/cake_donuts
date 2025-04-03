@@ -16,7 +16,5 @@ Site sobre venda de cake donuts
 - CSS
 - JavaScript
 
-## Conhecimentos abordados
-
-
+Clique [aqui](/https://luhcakedonuts.netlify.app/) e veja como ficou!
 
